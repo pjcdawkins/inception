@@ -20,8 +20,11 @@ mounts:
     "/private": "shared:files/private"
 
 hooks:
+    build: |
+      drush dl composer-8.x-1.x-dev
     deploy: |
       cd public
+      drush cc drush
       drush -y composer-manager install
       drush -y updatedb
 
