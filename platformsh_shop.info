@@ -14,9 +14,7 @@ dependencies[] = options
 dependencies[] = path
 dependencies[] = taxonomy
 dependencies[] = dblog
-dependencies[] = field_ui
 dependencies[] = file
-dependencies[] = toolbar
 
 ; Install Commerce dependencies.
 dependencies[] = addressfield
@@ -24,9 +22,7 @@ dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = rules
-dependencies[] = rules_admin
 dependencies[] = views
-dependencies[] = views_ui
 
 ; Install Commerce core modules.
 dependencies[] = commerce
@@ -48,8 +44,6 @@ dependencies[] = commerce_product_ui
 dependencies[] = commerce_product_pricing
 dependencies[] = commerce_product_pricing_ui
 dependencies[] = commerce_product_reference
-dependencies[] = commerce_tax
-dependencies[] = commerce_tax_ui
 
 ; Install contrib dependencies
 dependencies[] = composer_manager
@@ -60,3 +54,9 @@ dependencies[] = features
 ; Install Platform.sh modules
 dependencies[] = platformsh_api
 dependencies[] = platformsh_api_commerce
+
+; Enable not-strictly-necessary UI modules
+dependencies[] = field_ui
+dependencies[] = rules_admin
+dependencies[] = views_ui
+dependencies[] = navbar

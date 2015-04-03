@@ -32,3 +32,30 @@ projects[views][version] = "3.10"
 projects[features][version] = "2.4"
 
 projects[commerce_features][version] = "1.0"
+
+projects[breakpoints][version] = "1.3"
+
+projects[libraries][version] = "2.2"
+
+projects[navbar][download][type] = "git"
+projects[navbar][download][branch] = "7.x-1.x"
+projects[navbar][download][revision] = "09ddcf30ff0923deec4c5c0805fa695a8b9beef9"
+
+; Themes
+projects[shiny][version] = "1.6"
+
+; Liraries
+libraries[backbone][download][type] = "git"
+libraries[backbone][download][url] = "https://github.com/jashkenas/backbone.git"
+libraries[underscore][download][branch] = "master"
+libraries[underscore][download][tag] = "1.1.2"
+libraries[backbone][type] = "library"
+
+libraries[modernizr][download][url] = "http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"
+libraries[modernizr][download][type] = "get"
+
+libraries[underscore][download][type] = "git"
+libraries[underscore][download][url] = "https://github.com/jashkenas/underscore.git"
+libraries[underscore][download][branch] = "master"
+libraries[underscore][download][tag] = "1.8.3"
+libraries[underscore][type] = "library"
