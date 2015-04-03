@@ -1,0 +1,10 @@
+mysql:
+    type: mysql
+    disk: 3072
+
+redis:
+    type: redis
+
+solr:
+    type: solr
+    disk: 1024

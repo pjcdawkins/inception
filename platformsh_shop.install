@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * Install/uninstall functions for the Platform.sh Shop install profile.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function platformsh_shop_install() {
+  _platformsh_shop_create_admin_role();
+}
+
+/**
+ * Create a default role for site administrators, with all available permissions assigned.
+ */
+function _platformsh_shop_create_admin_role() {
+  $admin_role = (object) array(
+    'name' => 'administrator',
+    'machine_name' => 'administrator',
+    'weight' => 100,
+  );
+  user_role_save($admin_role);
+  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
+  variable_set('user_admin_role', $admin_role->rid);
+  db_insert('users_roles')
+    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
+    ->execute();
+}
