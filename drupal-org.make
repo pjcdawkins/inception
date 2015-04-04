@@ -15,6 +15,8 @@ projects[commerce][version] = "1.11"
 
 projects[ctools][version] = "1.7"
 
+projects[date][version] = "2.8"
+
 projects[entity][version] = "1.6"
 
 projects[entity_bundle_plugin][version] = "1.0-beta2"
@@ -22,6 +24,7 @@ projects[entity_bundle_plugin][version] = "1.0-beta2"
 projects[entityreference][version] = "1.1"
 
 projects[views_bulk_operations][version] = "3.2"
+projects[views_megarow][version] = "1.4"
 
 projects[composer_manager][version] = "1.7"
 

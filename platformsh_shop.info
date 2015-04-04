@@ -51,6 +51,7 @@ dependencies[] = commerce_features
 dependencies[] = commerce_license
 dependencies[] = commerce_license_billing
 dependencies[] = advancedqueue
+dependencies[] = date
 
 ; Install Platform.sh modules
 dependencies[] = platformsh_api
