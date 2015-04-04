@@ -49,6 +49,7 @@ dependencies[] = commerce_product_reference
 dependencies[] = composer_manager
 dependencies[] = commerce_features
 dependencies[] = commerce_license
+dependencies[] = commerce_license_billing
 dependencies[] = features
 
 ; Install Platform.sh modules

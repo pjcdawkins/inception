@@ -3,6 +3,7 @@ api = 2
 defaults[projects][subdir] = contrib
 
 projects[commerce_license][version] = "1.3"
+projects[commerce_license_billing][version] = "1.0-beta4"
 
 projects[platformsh_api][type] = "module"
 projects[platformsh_api][download][type] = "git"
