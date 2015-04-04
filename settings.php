@@ -7,6 +7,8 @@ $conf['hash_salt'] = 'Y78u7MLfwZZwRvDKsLkuykIHElcCAOzn4xDH2lfxE6gpyM2uNVyAjign7q
 if (isset($_ENV['PLATFORM_APP_DIR'])) {
   $conf['composer_manager_file_dir'] = $_ENV['PLATFORM_APP_DIR'] . '/composer';
   $conf['composer_manager_vendor_dir'] = $_ENV['PLATFORM_APP_DIR'] . '/composer/vendor';
+  $conf['composer_manager_autobuild_file'] = 0;
+  $conf['composer_manager_autobuild_packages'] = 0;
 }
 
 $conf['admin_theme'] = 'shiny';
