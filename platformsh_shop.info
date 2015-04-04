@@ -59,6 +59,7 @@ dependencies[] = platformsh_api_commerce
 dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = uuid
+dependencies[] = entity_uuid
 dependencies[] = uuid_features
 dependencies[] = platformsh_shop_psh_feature
 
