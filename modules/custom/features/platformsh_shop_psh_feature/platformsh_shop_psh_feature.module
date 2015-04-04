@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the platformsh_shop_psh_feature feature.
+ */
+
+include_once 'platformsh_shop_psh_feature.features.inc';
