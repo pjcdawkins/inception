@@ -40,6 +40,9 @@ projects[breakpoints][version] = "1.3"
 
 projects[libraries][version] = "2.2"
 
+projects[uuid][version] = "1.0-alpha6"
+projects[uuid_features][version] = "1.0-alpha4"
+
 projects[navbar][download][type] = "git"
 projects[navbar][download][branch] = "7.x-1.x"
 projects[navbar][download][revision] = "09ddcf30ff0923deec4c5c0805fa695a8b9beef9"

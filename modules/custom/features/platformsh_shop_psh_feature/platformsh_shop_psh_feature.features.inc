@@ -45,3 +45,21 @@ function platformsh_shop_psh_feature_ctools_plugin_api($module = NULL, $api = NU
     return array("version" => "1");
   }
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function platformsh_shop_psh_feature_node_info() {
+  $items = array(
+    'product_display' => array(
+      'name' => t('Product display'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  drupal_alter('node_info', $items);
+  return $items;
+}
