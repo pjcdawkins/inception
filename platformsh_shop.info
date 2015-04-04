@@ -50,6 +50,7 @@ dependencies[] = composer_manager
 dependencies[] = commerce_features
 dependencies[] = commerce_license
 dependencies[] = commerce_license_billing
+dependencies[] = advancedqueue
 
 ; Install Platform.sh modules
 dependencies[] = platformsh_api
