@@ -5,3 +5,11 @@
  */
 
 include_once 'platformsh_shop_psh_feature.features.inc';
+
+/**
+ * Implements hook_flush_caches().
+ */
+function platformsh_shop_psh_feature_flush_caches() {
+  module_load_include('product.inc', 'platformsh_shop_psh_feature');
+  platformsh_shop_psh_feature_create_default_products();
+}

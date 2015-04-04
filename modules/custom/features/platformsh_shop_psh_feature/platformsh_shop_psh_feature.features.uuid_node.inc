@@ -30,7 +30,7 @@ function platformsh_shop_psh_feature_uuid_features_default_content() {
   'field_node_product' => array(
     'und' => array(
       0 => array(
-        'product_id' => 1,
+        'product_id' => 3,
       ),
     ),
   ),
