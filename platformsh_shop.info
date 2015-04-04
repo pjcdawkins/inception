@@ -50,11 +50,15 @@ dependencies[] = composer_manager
 dependencies[] = commerce_features
 dependencies[] = commerce_license
 dependencies[] = commerce_license_billing
-dependencies[] = features
 
 ; Install Platform.sh modules
 dependencies[] = platformsh_api
 dependencies[] = platformsh_api_commerce
+
+; Install features.
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = platformsh_shop_psh_feature
 
 ; Enable not-strictly-necessary UI modules
 dependencies[] = field_ui

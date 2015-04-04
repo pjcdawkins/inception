@@ -5,6 +5,23 @@
  */
 
 /**
+ * Implements hook_default_cl_billing_cycle_type().
+ */
+function platformsh_shop_psh_feature_default_cl_billing_cycle_type() {
+  $items = array();
+  $items['monthly_async'] = entity_import('cl_billing_cycle_type', '{
+    "engine" : "periodic",
+    "name" : "monthly_async",
+    "title" : "Monthly",
+    "prepaid" : null,
+    "wrapper" : {},
+    "pce_period" : { "und" : [ { "value" : "month" } ] },
+    "pce_async" : { "und" : [ { "value" : "1" } ] }
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_commerce_product_default_types().
  */
 function platformsh_shop_psh_feature_commerce_product_default_types() {
@@ -18,4 +35,13 @@ function platformsh_shop_psh_feature_commerce_product_default_types() {
     ),
   );
   return $items;
+}
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function platformsh_shop_psh_feature_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
