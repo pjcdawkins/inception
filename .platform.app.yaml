@@ -23,7 +23,7 @@ hooks:
     build: |
       # Download the Drush Composer extension if it doesn't exist.
       if [ ! -d "$HOME/.drush/composer" ]; then
-        drush dl -v composer-8.x-1.x-dev
+        drush dl composer-8.x-1.x-dev
       fi
 
       # Stuff to only run on local for development purposes.
