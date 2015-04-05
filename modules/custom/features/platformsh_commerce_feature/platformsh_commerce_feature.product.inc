@@ -24,7 +24,7 @@ function platformsh_commerce_feature_product_definition() {
         'uid' => 1,
         'commerce_license_type' => 'platformsh_subscription',
         'commerce_license_duration' => 0,
-        'cl_billing_type' => 'postpaid',
+        'cl_billing_type' => 'prepaid',
       ),
     ),
   );
