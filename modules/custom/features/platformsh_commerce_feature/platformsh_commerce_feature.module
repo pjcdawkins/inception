@@ -7,11 +7,16 @@
 include_once 'platformsh_commerce_feature.features.inc';
 
 /**
- * Implements hook_flush_caches().
+ * Implements hook_modules_enabled().
  */
-function platformsh_commerce_feature_flush_caches() {
-  module_load_include('product.inc', 'platformsh_commerce_feature');
-  platformsh_commerce_feature_create_default_products();
+function platformsh_commerce_feature_modules_enabled($modules) {
+  if (in_array('platformsh_commerce_feature', $modules)) {
+    drupal_flush_all_caches();
+    require_once 'platformsh_commerce_feature.product.inc';
+    platformsh_commerce_feature_create_default_products();
+    require_once 'platformsh_commerce_feature.fixtures.inc';
+    platformsh_commerce_feature_create_default_nodes();
+  }
 }
 
 /**

@@ -2,11 +2,11 @@
 
 /**
  * @file
- * Defines products to sell Platform.sh subscriptions.
+ * Default product definitions for the platformsh_commerce_feature feature.
  */
 
 /**
- * Defines products that will be created during installation.
+ * Define default products.
  *
  * @return array
  *   An array of product entities, keyed by product type.
@@ -31,9 +31,14 @@ function platformsh_commerce_feature_product_definition() {
 }
 
 /**
- * Create default products.
+ * Create or update default products.
  */
 function platformsh_commerce_feature_create_default_products() {
+  static $done = FALSE;
+  if ($done) {
+    return;
+  }
+
   foreach (platformsh_commerce_feature_product_definition() as $product_type => $products) {
     foreach ($products as $sku => $product_info) {
       if ($product = commerce_product_load_by_sku($sku)) {
@@ -69,4 +74,6 @@ function platformsh_commerce_feature_create_default_products() {
       }
     }
   }
+
+  $done = TRUE;
 }
