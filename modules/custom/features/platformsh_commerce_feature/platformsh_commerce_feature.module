@@ -13,3 +13,21 @@ function platformsh_commerce_feature_flush_caches() {
   module_load_include('product.inc', 'platformsh_commerce_feature');
   platformsh_commerce_feature_create_default_products();
 }
+
+/**
+ * Implements hook_commerce_checkout_pane_info_alter().
+ */
+function platformsh_commerce_feature_commerce_checkout_pane_info_alter(&$checkout_panes) {
+  // Show the 'License information' pane in the 'Checkout' page.
+  if (isset($checkout_panes['commerce_license'])) {
+    $checkout_panes['commerce_license']['enabled'] = 1;
+    $checkout_panes['commerce_license']['page'] = 'checkout';
+    $checkout_panes['commerce_license']['weight'] = 10;
+  }
+  // Show the 'License completion message' pane in the 'Complete' page.
+  if (isset($checkout_panes['commerce_license_complete'])) {
+    $checkout_panes['commerce_license_complete']['enabled'] = 1;
+    $checkout_panes['commerce_license_complete']['page'] = 'complete';
+    $checkout_panes['commerce_license_complete']['weight'] = 10;
+  }
+}
