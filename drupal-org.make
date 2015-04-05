@@ -10,6 +10,7 @@ projects[platformsh_api][type] = "module"
 projects[platformsh_api][download][type] = "git"
 projects[platformsh_api][download][url] = "https://github.com/pjcdawkins/platformsh_api_drupal.git"
 projects[platformsh_api][download][branch] = "7.x-1.x"
+projects[platformsh_api][download][revision] = "48b4232c71444589b8be27ab3b6d32024498df61"
 
 projects[commerce][version] = "1.11"
 
