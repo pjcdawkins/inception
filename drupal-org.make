@@ -47,6 +47,7 @@ projects[libraries][version] = "2.2"
 projects[navbar][download][type] = "git"
 projects[navbar][download][branch] = "7.x-1.x"
 projects[navbar][download][revision] = "09ddcf30ff0923deec4c5c0805fa695a8b9beef9"
+projects[navbar][patch][] = "https://www.drupal.org/files/issues/navbar-contrib-icons-1954912-20.patch"
 
 ; Themes
 projects[shiny][version] = "1.6"
