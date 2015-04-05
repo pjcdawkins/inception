@@ -1,7 +1,13 @@
 name = platformsh_shop_core_feature
 core = 7.x
 package = Features
+dependencies[] = ctools
 dependencies[] = features
 dependencies[] = node
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[user_permission][] = view own unpublished content
+features[variable][] = admin_theme
+features[variable][] = node_admin_theme
+features[variable][] = site_name

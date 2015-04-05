@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the platformsh_shop_core_feature feature.
  */
+
+include_once 'platformsh_shop_core_feature.features.inc';
