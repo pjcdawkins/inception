@@ -11,7 +11,7 @@ Sell Platform.sh subscriptions from a Platform.sh Drupal site.
    * Add database credentials.
 3. Install the site with the platformsh_shop profile:
   ```
-  drush site-install platformsh_shop
+  drush site-install --sites-subdir=default platformsh_shop
   ```
 4. Create a product display node to sell the PLATFORMSH-SUBSCRIPTION product.
 5. To process the synchronization queue, run:
