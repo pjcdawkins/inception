@@ -11,7 +11,7 @@
  * @return array
  *   An array of product entities, keyed by product type.
  */
-function platformsh_shop_psh_feature_product_definition() {
+function platformsh_commerce_feature_product_definition() {
   return array(
     'platformsh_subscription' => array(
       'PLATFORMSH-SUBSCRIPTION' => array(
@@ -33,8 +33,8 @@ function platformsh_shop_psh_feature_product_definition() {
 /**
  * Create default products.
  */
-function platformsh_shop_psh_feature_create_default_products() {
-  foreach (platformsh_shop_psh_feature_product_definition() as $product_type => $products) {
+function platformsh_commerce_feature_create_default_products() {
+  foreach (platformsh_commerce_feature_product_definition() as $product_type => $products) {
     foreach ($products as $sku => $product_info) {
       if ($product = commerce_product_load_by_sku($sku)) {
         $original = clone $product;

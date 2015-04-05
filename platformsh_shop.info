@@ -60,7 +60,7 @@ dependencies[] = platformsh_api_commerce
 ; Install features.
 dependencies[] = features
 dependencies[] = strongarm
-dependencies[] = platformsh_shop_psh_feature
+dependencies[] = platformsh_commerce_feature
 
 ; Enable not-strictly-necessary UI modules
 dependencies[] = field_ui

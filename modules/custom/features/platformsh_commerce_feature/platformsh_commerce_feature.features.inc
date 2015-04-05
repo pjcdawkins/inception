@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * platformsh_shop_psh_feature.features.inc
+ * platformsh_commerce_feature.features.inc
  */
 
 /**
  * Implements hook_default_cl_billing_cycle_type().
  */
-function platformsh_shop_psh_feature_default_cl_billing_cycle_type() {
+function platformsh_commerce_feature_default_cl_billing_cycle_type() {
   $items = array();
   $items['monthly_async'] = entity_import('cl_billing_cycle_type', '{
     "engine" : "periodic",
@@ -24,7 +24,7 @@ function platformsh_shop_psh_feature_default_cl_billing_cycle_type() {
 /**
  * Implements hook_commerce_product_default_types().
  */
-function platformsh_shop_psh_feature_commerce_product_default_types() {
+function platformsh_commerce_feature_commerce_product_default_types() {
   $items = array(
     'platformsh_subscription' => array(
       'type' => 'platformsh_subscription',
@@ -40,7 +40,7 @@ function platformsh_shop_psh_feature_commerce_product_default_types() {
 /**
  * Implements hook_ctools_plugin_api().
  */
-function platformsh_shop_psh_feature_ctools_plugin_api($module = NULL, $api = NULL) {
+function platformsh_commerce_feature_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -49,7 +49,7 @@ function platformsh_shop_psh_feature_ctools_plugin_api($module = NULL, $api = NU
 /**
  * Implements hook_node_info().
  */
-function platformsh_shop_psh_feature_node_info() {
+function platformsh_commerce_feature_node_info() {
   $items = array(
     'product_display' => array(
       'name' => t('Product display'),

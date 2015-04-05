@@ -1,4 +1,4 @@
-name = platformsh_shop_psh_feature
+name = platformsh_commerce_feature
 core = 7.x
 package = Features
 dependencies[] = commerce_cart

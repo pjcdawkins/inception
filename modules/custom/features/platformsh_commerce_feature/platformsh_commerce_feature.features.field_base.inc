@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * platformsh_shop_psh_feature.features.field_base.inc
+ * platformsh_commerce_feature.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function platformsh_shop_psh_feature_field_default_field_bases() {
+function platformsh_commerce_feature_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'body'

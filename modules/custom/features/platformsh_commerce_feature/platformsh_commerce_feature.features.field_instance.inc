@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * platformsh_shop_psh_feature.features.field_instance.inc
+ * platformsh_commerce_feature.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function platformsh_shop_psh_feature_field_default_field_instances() {
+function platformsh_commerce_feature_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'commerce_product-platformsh_subscription-cl_billing_cycle_type'

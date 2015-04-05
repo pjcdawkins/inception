@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * platformsh_shop_psh_feature.strongarm.inc
+ * platformsh_commerce_feature.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function platformsh_shop_psh_feature_strongarm() {
+function platformsh_commerce_feature_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
