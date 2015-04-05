@@ -10,11 +10,12 @@
 function platformsh_shop_core_feature_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'view own unpublished content'.
-  $permissions['view own unpublished content'] = array(
-    'name' => 'view own unpublished content',
+  // Exported permission: 'access content'.
+  $permissions['access content'] = array(
+    'name' => 'access content',
     'roles' => array(
-      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
