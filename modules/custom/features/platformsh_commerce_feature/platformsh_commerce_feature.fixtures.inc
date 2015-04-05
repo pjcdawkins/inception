@@ -28,8 +28,6 @@ function platformsh_commerce_feature_default_node_definition() {
  * Create default nodes.
  */
 function platformsh_commerce_feature_create_default_nodes() {
-  drupal_flush_all_caches();
-
   $node_definitions = platformsh_commerce_feature_default_node_definition();
   foreach ($node_definitions as $node_definition) {
     $node = entity_create('node', array('type' => $node_definition['type']));
