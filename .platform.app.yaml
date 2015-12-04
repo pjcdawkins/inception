@@ -1,6 +1,9 @@
 name: php
 
-toolstack: "php:drupal"
+type: php:5.6
+
+build:
+    flavor: drupal
 
 relationships:
     database: "mysql:mysql"
