@@ -1,5 +1,7 @@
 <?php
 
+$conf['site_name'] = 'Platform.sh Shop';
+
 if (isset($_ENV['PLATFORM_APP_DIR'])) {
   $conf['composer_manager_file_dir'] = $_ENV['PLATFORM_APP_DIR'] . '/composer';
   $conf['composer_manager_vendor_dir'] = $_ENV['PLATFORM_APP_DIR'] . '/composer/vendor';

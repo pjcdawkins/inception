@@ -24,12 +24,5 @@ function platformsh_shop_core_feature_strongarm() {
   $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'site_name';
-  $strongarm->value = 'Platform.sh Shop';
-  $export['site_name'] = $strongarm;
-
   return $export;
 }
